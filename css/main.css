@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+:root{
+  --primary-color: rgba(234, 98, 92, 1);
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.site-logo{
+display: block;
+margin-right:auto;
+
+}
+.site-header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.site-nav{
+  display: flex;
+  justify-content: space-around;
+  width: 270px;
+  margin-right: 40px;
+
+}
+.site-nav-item{
+  list-style: none;
+}
+
+.site-nav-link{
+  text-decoration: none ;
+font-weight: 400;
+font-size: 15px;
+line-height: 23px;
+color: #333333;
+transition: all 0.3s ease-in-out;
+padding-bottom: 5px;
+
+}
+.site-nav-link:hover{
+  /* opacity: 0.8; */
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+.site-form-input {
+  width: 165px;
+  font-size: 15px;
+  border: 0;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 6px;
+
+}
+.site-form-input:focus {
+outline: 0;
+border-bottom: 1px solid red;
+}
+
+.hero {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-info {
+
+}
+.hero-info-tittle{
+  font-style: bold;
+  font-size: 50px;
+  line-height: 60px;
+color: rgba(0, 0, 0, 1);
+margin-bottom: 30px;
+}
+.hero-info-description{
+  width: 450px;
+padding-left: 40px;
+border-left:1px solid black ;
+font-size: 16px;
+line-height: 24px;
+color: solid #777777;
+margin-bottom: 42px;
+}
+/* global */
+
+.cmn-btn{
+text-decoration: none;
+color: rgba(255, 255, 255, 1);
+font-size: 18px;
+line-height: 27px;
+background-color: var(--primary-color);
+padding: 12px 38px;
+border: 1px solid transparent;
+transition: 0.3s ease-in-out;
+}
+.cmn-btn:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+.hero-img {
+  background-image: url("../img/watches.png");
+  background-repeat: no-repeat;
+background-size: contain;
+  width: 500px;
+  height: 500px;
+}
